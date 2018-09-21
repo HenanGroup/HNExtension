@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HNExtension_Example' do
+  pod 'HNExtension', :path => '../'
+
+  target 'HNExtension_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
