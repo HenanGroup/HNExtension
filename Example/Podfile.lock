@@ -1,0 +1,16 @@
+PODS:
+  - HNExtension (0.1.0)
+
+DEPENDENCIES:
+  - HNExtension (from `../`)
+
+EXTERNAL SOURCES:
+  HNExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HNExtension: b5c0e56519bdadce17679e72cabf39a323c8e5e3
+
+PODFILE CHECKSUM: db105723951a26b3a253f0c6d0f4dd2305bd5ea3
+
+COCOAPODS: 1.5.3
