@@ -1,7 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
 use_frameworks!
+inhibit_all_warnings!
 
 target 'HNExtension_Example' do
   pod 'HNExtension', :path => '../'
+  pod 'SwiftLint', '~> 0.27.0'
 
   target 'HNExtension_Tests' do
     inherit! :search_paths

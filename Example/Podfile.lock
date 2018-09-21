@@ -1,8 +1,14 @@
 PODS:
   - HNExtension (0.1.0)
+  - SwiftLint (0.27.0)
 
 DEPENDENCIES:
   - HNExtension (from `../`)
+  - SwiftLint (~> 0.27.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftLint
 
 EXTERNAL SOURCES:
   HNExtension:
@@ -10,7 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   HNExtension: b5c0e56519bdadce17679e72cabf39a323c8e5e3
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: db105723951a26b3a253f0c6d0f4dd2305bd5ea3
+PODFILE CHECKSUM: a600b97e82d8679b9add15ab7f10ef3c5a4e92f8
 
 COCOAPODS: 1.5.3
