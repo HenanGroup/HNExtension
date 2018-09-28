@@ -16,11 +16,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         let arr = ["Sam", "Hello", "Susan"]
-        let other = ["Sam", "Daxiong", "Susan", "DX"]
+        let other = ["Sam", "Hello", "Daxiong", "Susan", "DX"]
         
-        let res = arr.hn.merge(other) { (current, new) -> String in
-            return new
-        }
+        let res = arr.hn.isSubset(of: other)
         
     }
 
