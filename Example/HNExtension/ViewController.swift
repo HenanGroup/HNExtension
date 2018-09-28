@@ -18,10 +18,8 @@ class ViewController: UIViewController {
         let arr = ["Sam", "Hello", "Susan"]
         let other = ["Sam", "Daxiong", "Susan", "DX"]
         
-        arr.hn_merge(other) { (current, new) -> String in
+        let res = arr.hn.merge(other) { (current, new) -> String in
             return new
-            }.hn_filterRepeat { (e) -> String in
-                return e
         }
         
     }

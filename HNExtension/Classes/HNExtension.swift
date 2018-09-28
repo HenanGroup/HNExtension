@@ -7,12 +7,7 @@
 //
 
 public struct HenanExtension<Base> {
-    /// Base object to extend.
     public let base: Base
-    
-    /// Creates extensions with base object.
-    ///
-    /// - parameter base: Base object.
     public init(_ base: Base) {
         self.base = base
     }
@@ -20,14 +15,11 @@ public struct HenanExtension<Base> {
 
 /// A type that has reactive extensions.
 public protocol HenanExtensionCompatible {
-    /// Extended type
     associatedtype CompatibleType
     
-    /// Reactive extensions.
-    static var hn: HenanExtension<CompatibleType>.Type { get }
+    static var hn: HenanExtension<CompatibleType>.Type { get set }
     
-    /// Reactive extensions.
-    var hn: HenanExtension<CompatibleType> { get }
+    var hn: HenanExtension<CompatibleType> { get set }
 }
 
 extension HenanExtensionCompatible {
@@ -36,6 +28,7 @@ extension HenanExtensionCompatible {
         get {
             return HenanExtension<Self>.self
         }
+        set {}
     }
     
     /// Reactive extensions.
@@ -43,9 +36,6 @@ extension HenanExtensionCompatible {
         get {
             return HenanExtension(self)
         }
+        set {}
     }
-}
-
-extension Array: HenanExtensionCompatible {
-    
 }
